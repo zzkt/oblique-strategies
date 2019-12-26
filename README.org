@@ -1,9 +1,9 @@
 * Oblique strategies 
 
+"In 1975, Peter Schmidt and Brian Eno created the original pack of Oblique Strategies cards, through thinking about approaches to their own work as artist and musician. The Oblique Strategies constitute a set of over 100 cards, each of which is a suggestion of a course of action or thinking to assist in creative situations. These famous cards have been used by many artists and creative people all over the world since their initial publication." https://www.enoshop.co.uk/product/oblique-strategies.html
+
 #+CAPTION: Oblique Strategies deck, PO Box, The Barbican, London, UK. Cory Doctorow
 [[strategies/9041086636_498b3a0741_k.jpg]]
-
-"In 1975, Peter Schmidt and Brian Eno created the original pack of Oblique Strategies cards, through thinking about approaches to their own work as artist and musician. The Oblique Strategies constitute a set of over 100 cards, each of which is a suggestion of a course of action or thinking to assist in creative situations. These famous cards have been used by many artists and creative people all over the world since their initial publication." https://www.enoshop.co.uk/product/oblique-strategies.html
 
 * Acute tactics
 
@@ -30,14 +30,11 @@ Several editions of the Oblique Strategies have be produced, published, explored
 
 To use a specific edition set the variable =oblique-edition= for example...
 
-using a file name...
-=(setq oblique-edition "strategies/oblique-strategies-edition-4.txt")= 
-
-or customize (using the name of the edition)...
-=M-x customize-group RET oblique-strategies RET= 
+  - using a file name =(setq oblique-edition "strategies/oblique-strategies-edition-4.txt")= 
+  - or customize (using the name of the edition) =M-x customize-group RET oblique-strategies RET= 
 
 * Further
- - [[https://www.enoshop.co.uk/product/oblique-strategies.html][Physical Non-Musical]] (Eno Shop)
- - [[http://music.hyperreal.org/artists/brian_eno/osfaq2.html][The More-Or-Less Complete and True History of the Oblique Strategies]] (1995)
- - notes from [[http://www.rtqe.net/ObliqueStrategies/index.html][Gregory Taylor]] (continued...) and [[https://github.com/ptigas/oblique-strategies][Panagiotis Tigas]] (2012)
- - [[http://www.heraclitusfragments.com/Fragments.html][The Fragments of Heraclitus]] (6th century BCE)
+  - [[https://www.enoshop.co.uk/product/oblique-strategies.html][Physical Non-Musical]] (Eno Shop)
+  - [[http://music.hyperreal.org/artists/brian_eno/osfaq2.html][The More-Or-Less Complete and True History of the Oblique Strategies]] (1995)
+  - notes from [[http://www.rtqe.net/ObliqueStrategies/index.html][Gregory Taylor]] (continued...) and [[https://github.com/ptigas/oblique-strategies][Panagiotis Tigas]] (2012)
+  - [[http://www.heraclitusfragments.com/Fragments.html][The Fragments of Heraclitus]] (6th century BCE)
