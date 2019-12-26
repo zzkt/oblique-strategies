@@ -3,7 +3,7 @@
 "In 1975, Peter Schmidt and Brian Eno created the original pack of Oblique Strategies cards, through thinking about approaches to their own work as artist and musician. The Oblique Strategies constitute a set of over 100 cards, each of which is a suggestion of a course of action or thinking to assist in creative situations. These famous cards have been used by many artists and creative people all over the world since their initial publication." https://www.enoshop.co.uk/product/oblique-strategies.html
 
 #+CAPTION: Oblique Strategies deck, PO Box, The Barbican, London, UK. Cory Doctorow
-[[strategies/9041086636_498b3a0741_k.jpg]]
+[[https://flic.kr/p/eLVW55][strategies/9041086636_498b3a0741_k.jpg]]
 
 * Acute tactics
 
