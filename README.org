@@ -11,7 +11,7 @@
 
 "Throughout the world people have realized a universality among these word combinations: they speak to the mind, to the heart and to the gut. Whatever obstacles a person may find in their life, meditating on one of these strategies can help a person focus towards their goal. These oblique strategies never provide answers, but they give a person impetus to look somewhere they hadn't thought of looking before. It's like having someone look over your shoulder and point out something you overlooked." https://h2g2.com/entry/A635528  
 
-Oblique strategies can be installed via [[https://melpa.org][MELPA]] (or manually from [[https://github.com/zzkt/oblique-strategies][github]])
+Oblique strategies can be installed manually from [[https://github.com/zzkt/oblique-strategies][github]]
 
 #+BEGIN_SRC emacs-lisp
   (use-package oblique
