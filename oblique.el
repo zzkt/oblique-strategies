@@ -87,13 +87,13 @@
 
 ;;;###autoload
 (defun oblique-strategy ()
-  "An obique strategy."
+  "An oblique strategy."
   (interactive)
   (random-elt strategies))
 
 ;;;###autoload
 (defun insert-oblique-strategy ()
-  "Insert an obique strategy at point."
+  "Insert an oblique strategy at point."
   (interactive)
   (insert (oblique-strategy)))
 
