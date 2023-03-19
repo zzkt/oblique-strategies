@@ -31,7 +31,7 @@
 ;; is a set of published cards created by Brian Eno and Peter Schmidt
 ;; first published in 1975, and is now in its fifth, open ended, edition.
 ;; Each card contains a phrase or cryptic remark which can be used to break
-;; a deadlock or dilemma situation.  Some are specific to music composition; 
+;; a deadlock or dilemma situation.  Some are specific to music composition;
 ;; others are more general."
 ;;         http://en.wikipedia.org/wiki/Oblique_Strategies
 ;;
@@ -52,7 +52,7 @@
 ;; Oblique Strategies © 1975, 1978, 1979, and 2002 Brian Eno and Peter Schmidt
 
 ;;; Revision history:
-;; 
+;;
 ;;  - 2011-11-11 - protoversion, collection, collation
 ;;  - 2019-12-12 - melpa emersion, stochastism
 
@@ -80,7 +80,7 @@
 			   file (file-name-directory load-file-name)))
     (split-string (buffer-string) "\n" t)))
 
-(defvar strategies (read-lines oblique-edition))
+(defvar oblique-strategy-strategies (read-lines oblique-edition))
 
 (defun random-elt (list)
   (nth (random (length list)) list))
@@ -89,7 +89,7 @@
 (defun oblique-strategy ()
   "An oblique strategy."
   (interactive)
-  (random-elt strategies))
+  (random-elt oblique-strategy-strategies))
 
 ;;;###autoload
 (defun insert-oblique-strategy ()
