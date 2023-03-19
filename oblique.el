@@ -80,7 +80,7 @@
 			   file (file-name-directory load-file-name)))
     (split-string (buffer-string) "\n" t)))
 
-(defvar strategies (read-lines oblique-edition))
+(defvar oblique-strategy-strategies (read-lines oblique-edition))
 
 (defun random-elt (list)
   (nth (random (length list)) list))
@@ -89,7 +89,7 @@
 (defun oblique-strategy ()
   "An oblique strategy."
   (interactive)
-  (random-elt strategies))
+  (random-elt oblique-strategy-strategies))
 
 ;;;###autoload
 (defun insert-oblique-strategy ()
