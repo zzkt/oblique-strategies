@@ -15,7 +15,9 @@ Oblique strategies can be installed manually from [[https://github.com/zzkt/obli
 
 #+BEGIN_SRC emacs-lisp
   (use-package oblique
-    :config (setq oblique-edition "strategies/oblique-strategies-condensed.txt"))
+    :config (setq oblique-edition
+                  "strategies/oblique-strategies-condensed.txt")
+            (defalias 'insert-litany #'litanize-at-point))
 #+END_SRC
 
 A cryptic remark can be produced when needed using =M-x oblique-strategy= or more programatically if required e.g. =(alert (oblique-strategy) :title "Obliquely...")= it's also possible to insert an Oblique Strategy with =insert-oblique-strategy=
