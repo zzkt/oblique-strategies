@@ -55,7 +55,7 @@
 
 ;; with use-package...
 ;;   (use-package litanize
-;;      :config (defalias 'insert-litany #'litanize-at-point)
+;;      :config (defalias 'insert-oblique-strategy #'oblique-strategy-at-point)
 ;;              (setq oblique-edition
 ;;                    "strategies/oblique-strategies-condensed.txt")
 ;;      :bind (("H-i l" . insert-litany)))
