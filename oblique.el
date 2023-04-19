@@ -5,7 +5,7 @@
 ;; Author: nik gaffney <nik@fo.am>
 ;; Created: 2011-11-11
 ;; Version: 0.1
-;; Keywords: strategy, tactics, creativity
+;; Keywords: strategy, tactics, creativity, tools
 ;; URL: https://github.com/zzkt/oblique-strategies
 
 ;; This file is not part of GNU Emacs.
@@ -31,7 +31,7 @@
 ;; is a set of published cards created by Brian Eno and Peter Schmidt
 ;; first published in 1975, and is now in its fifth, open ended, edition.
 ;; Each card contains a phrase or cryptic remark which can be used to break
-;; a deadlock or dilemma situation.  Some are specific to music composition; 
+;; a deadlock or dilemma situation.  Some are specific to music composition;
 ;; others are more general."
 ;;         http://en.wikipedia.org/wiki/Oblique_Strategies
 ;;
@@ -51,49 +51,60 @@
 ;;
 ;; Oblique Strategies © 1975, 1978, 1979, and 2002 Brian Eno and Peter Schmidt
 
-;;; Revision history:
-;; 
-;;  - 2011-11-11 - protoversion, collection, collation
-;;  - 2019-12-12 - melpa emersion, stochastism
+;;; Configuration:
 
+;; with use-package...
+;;   (use-package litanize
+;;      :config (defalias 'insert-litany #'litanize-at-point)
+;;              (setq oblique-edition
+;;                    "strategies/oblique-strategies-condensed.txt")
+;;      :bind (("H-i l" . insert-litany)))
+
+;;; Revision history:
+;;
+;;  - 2011-11-11 - protoversion, collection, collation
+;;  - 2019-12-12 - emersion, stochastism
+;;  - 2023-04-05 - emacs 29 compatibility (via @PuercoPop)
 
 ;;; Code:
 
 (defgroup oblique-strategies nil
-  "Once the search has begun, something will be found"
+  "Once the search has begun, something will be found."
   :group 'stochastism)
 
 (defcustom oblique-edition "strategies/oblique-strategies-condensed.txt"
   "Which edition of the Oblique Strategies to draw from?"
   :group 'oblique-strategies
   :type  '(choice
-	   (const :tag "Condensed Edition (2001)" :value "strategies/oblique-strategies-condensed.txt")
-	   (const :tag "Edition 4 (1996)" :value "strategies/oblique-strategies-edition-4.txt")
-	   (const :tag "Edition 3 (1979)" :value "strategies/oblique-strategies-edition-3.txt")
-	   (const :tag "Edition 2 (1978)" :value "strategies/oblique-strategies-edition-2.txt")
-	   (const :tag "Edition 1 (1975)" :value "strategies/oblique-strategies-edition-1.txt")))
+           (const :tag "Condensed Edition (2001)" :value "strategies/oblique-strategies-condensed.txt")
+           (const :tag "Edition 4 (1996)" :value "strategies/oblique-strategies-edition-4.txt")
+           (const :tag "Edition 3 (1979)" :value "strategies/oblique-strategies-edition-3.txt")
+           (const :tag "Edition 2 (1978)" :value "strategies/oblique-strategies-edition-2.txt")
+           (const :tag "Edition 1 (1975)" :value "strategies/oblique-strategies-edition-1.txt")
+           ))
 
-(defun read-lines (file)
-  "Read a file into a list of lines."
+(defun oblique--read (file)
+  "Read FILE into a list of lines."
   (with-temp-buffer
-    (insert-file-contents (expand-file-name
-			   file (file-name-directory load-file-name)))
+      (insert-file-contents (expand-file-name
+                             file (file-name-directory load-file-name)))
     (split-string (buffer-string) "\n" t)))
 
-(defvar strategies (read-lines oblique-edition))
+(defvar oblique-strategies (oblique--read oblique-edition))
 
-(defun random-elt (list)
+(defun oblique--elt (list)
+  "Return a random element from LIST."
   (nth (random (length list)) list))
 
 ;;;###autoload
 (defun oblique-strategy ()
-  "An obique strategy."
+  "An oblique strategy."
   (interactive)
-  (random-elt strategies))
+  (oblique--elt oblique-strategies))
 
 ;;;###autoload
-(defun insert-oblique-strategy ()
-  "Insert an obique strategy at point."
+(defun oblique-strategy-at-point ()
+  "Insert an oblique strategy at point."
   (interactive)
   (insert (oblique-strategy)))
 

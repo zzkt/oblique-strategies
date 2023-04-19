@@ -1,4 +1,4 @@
-* Oblique strategies 
+* Oblique strategies
 
 "In 1975, Peter Schmidt and Brian Eno created the original pack of Oblique Strategies cards, through thinking about approaches to their own work as artist and musician. The Oblique Strategies constitute a set of over 100 cards, each of which is a suggestion of a course of action or thinking to assist in creative situations. These famous cards have been used by many artists and creative people all over the world since their initial publication." https://www.enoshop.co.uk/product/oblique-strategies.html
 
@@ -7,9 +7,9 @@
 
 * Acute tactics
 
-"Each card contains a phrase or cryptic remark which can be used to break a deadlock or dilemma situation. Some are specific to music composition; others are more general." http://en.wikipedia.org/wiki/Oblique_Strategies 
+"Each card contains a phrase or cryptic remark which can be used to break a deadlock or dilemma situation. Some are specific to music composition; others are more general." http://en.wikipedia.org/wiki/Oblique_Strategies
 
-"Throughout the world people have realized a universality among these word combinations: they speak to the mind, to the heart and to the gut. Whatever obstacles a person may find in their life, meditating on one of these strategies can help a person focus towards their goal. These oblique strategies never provide answers, but they give a person impetus to look somewhere they hadn't thought of looking before. It's like having someone look over your shoulder and point out something you overlooked." https://h2g2.com/entry/A635528  
+"Throughout the world people have realized a universality among these word combinations: they speak to the mind, to the heart and to the gut. Whatever obstacles a person may find in their life, meditating on one of these strategies can help a person focus towards their goal. These oblique strategies never provide answers, but they give a person impetus to look somewhere they hadn't thought of looking before. It's like having someone look over your shoulder and point out something you overlooked." https://h2g2.com/entry/A635528
 
 Oblique strategies can be installed manually from [[https://github.com/zzkt/oblique-strategies][github]]
 
@@ -24,14 +24,18 @@ A cryptic remark can be produced when needed using =M-x oblique-strategy= or mor
 
 "The purpose of this document is to provide a listing of the complete contents of all three versions of the Oblique Strategies. While my interest in doing so is scholarly, readers may be interested in constructing their own "meta-set" of all three editions of the decks, or in looking at what is added or deleted." http://music.hyperreal.org/artists/brian_eno/osfaq2.html
 
-"I do this with hesitation. The following list is unarguably copyrighted by Brian Eno himself, and will no doubt be removed from this guide entry by some uninspired lawyer. The intent of this document is not to gain financially at the expense of anyone, but to spread the knowledge of this little known but really keen neato cool idea." https://h2g2.com/entry/A635528 
+"I do this with hesitation. The following list is unarguably copyrighted by Brian Eno himself, and will no doubt be removed from this guide entry by some uninspired lawyer. The intent of this document is not to gain financially at the expense of anyone, but to spread the knowledge of this little known but really keen neato cool idea." https://h2g2.com/entry/A635528
 
-Several editions of the Oblique Strategies have be produced, published, explored and transcribed. *Edition 1 (1975), *Edition 2 (1978), *Edition 3 (1979)*, *Edition 4 (1996)* of Oblique Strategies © 1975, 1978, 1979, and 2002 Brian Eno and Peter Schmidt. An unofficial *Condensed Edition (2001)* "is a condensed version of all four of the original versions, and also includes examples from Brian Eno's own publically published diary, as well as a version made public by the Whole Earth Catalog." https://h2g2.com/entry/A635528 
+Several editions of the Oblique Strategies have be produced, published, explored and transcribed. *Edition 1 (1975), *Edition 2 (1978), *Edition 3 (1979)*, *Edition 4 (1996)* of Oblique Strategies © 1975, 1978, 1979, and 2002 Brian Eno and Peter Schmidt. An unofficial *Condensed Edition (2001)* "is a condensed version of all four of the original versions, and also includes examples from Brian Eno's own publically published diary, as well as a version made public by the Whole Earth Catalog." https://h2g2.com/entry/A635528
 
 To use a specific edition set the variable =oblique-edition= for example...
 
-  - using a file name =(setq oblique-edition "strategies/oblique-strategies-edition-4.txt")= 
-  - or customize (using the name of the edition) =M-x customize-group RET oblique-strategies RET= 
+ - using a file name =(setq oblique-edition "strategies/oblique-strategies-edition-4.txt")=
+ - or customize (using the name of the edition) =M-x customize-group RET oblique-strategies RET=
+
+Other related (or unrelated) sources of inspiration and misdirection can be consulted, such as
+- [[https://curatorsintl.org/records/20290-do-it-home][do it (home)]] version: 5.7.2020  =(setq oblique-edition "strategies/do-it-abridged.txt")=
+- [[https://kevinlawler.com/prompts][Prompts for Programmers]]  =(setq oblique-edition "strategies/prompts-for-programmers.txt")=
 
 * Further
   - [[https://www.enoshop.co.uk/product/oblique-strategies.html][Physical Non-Musical]] (Eno Shop)
