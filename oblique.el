@@ -1,4 +1,4 @@
-;;; oblique.el --- Provide an oblique strategy
+;;; oblique.el --- Provide an oblique strategy  -*- lexical-binding: t; -*-
 
 ;; Copyright FoAM 2011
 ;;
